@@ -1,0 +1,20 @@
+void main() {
+  const _color = const Color(0xFFD7E0FF);
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        // backgroundColor: Colors.blueGrey[100],
+        backgroundColor: _color,
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text('Mutlu Bayramlar'),
+          backgroundColor: Colors.blueGrey[800],
+        ),
+        body: Center(
+          child: Image.asset('assets/images/mutlu_bayramlar.jpg'),
+        ),
+      ),
+    ),
+  );
+}
